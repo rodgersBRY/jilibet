@@ -470,6 +470,10 @@ footer h2 {
     width: 70%;
   }
 
+  .action-btns button {
+    width: 40%;
+  }
+
   .invitation-steps {
     gap: 2rem;
   }
@@ -527,6 +531,9 @@ footer h2 {
     width: 70%;
   }
 
+  .action-btns button {
+    width: 40%;
+  }
   .invitation-steps {
     margin-top: 3rem;
     gap: 4rem;
@@ -560,6 +567,10 @@ footer h2 {
 
   .card-middle-div {
     width: 90%;
+  }
+
+  .action-btns button {
+    width: 80%;
   }
 
   .referral-section {
