@@ -116,7 +116,6 @@ main {
   padding: 10px;
   text-align: center;
   border-radius: 10px;
-  width: 40%;
 }
 
 .share-link-div p {
@@ -281,7 +280,8 @@ main {
   background-position: center;
 }
 
-.share-icon, .copy-icon {
+.share-icon,
+.copy-icon {
   width: 25px;
   height: 25px;
 }
@@ -430,6 +430,10 @@ footer h2 {
     font-size: 24px;
   }
 
+  .share-link-div {
+    width: 40%;
+  }
+
   .invitation-steps {
     gap: 2rem;
   }
@@ -483,6 +487,10 @@ footer h2 {
     font-size: 19px;
   }
 
+  .share-link-div {
+    width: 40%;
+  }
+
   .invitation-steps {
     margin-top: 3rem;
     gap: 4rem;
@@ -512,6 +520,10 @@ footer h2 {
 @media screen and (max-width: 480px) {
   .mobile-header {
     display: block;
+  }
+
+  .share-link-div {
+    width: 50%;
   }
 
   .referral-section {
