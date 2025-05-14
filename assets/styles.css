@@ -73,6 +73,15 @@ main {
 .share-container h1 {
   font-weight: 600;
   color: var(--secondary-color);
+  color: #fff700; /* bright yellow text */
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  text-shadow: 0 0 5px #fff700, 0 0 10px #fff700, 0 0 20px #ffcc00,
+    0 0 40px #ffcc00;
 }
 
 .share-gradient-container {
@@ -151,13 +160,13 @@ main {
 }
 
 .share-btn {
-  background: conic-gradient(
+  background: linear-gradient(
     #fff1a6,
     #f5d56d,
     #d9a441,
     #a6722b,
-    #f5d56d,
-    #fff1a6
+    #a6722b,
+    #f5d56d
   );
 }
 
