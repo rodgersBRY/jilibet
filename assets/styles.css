@@ -104,6 +104,14 @@ main {
   gap: 2rem;
 }
 
+.card-middle-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .share-card-title {
   color: white;
   display: flex;
@@ -123,10 +131,26 @@ main {
   color: gray;
 }
 
+.action-btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
 .action-btns button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   padding: 10px;
-  border-radius: 10px;
-  border: none;
+  border-radius: 25px;
+  border: 4px solid var(--secondary-color);
+  width: 100%;
+}
+
+.share-btn {
   background: conic-gradient(
     #fff1a6,
     #f5d56d,
@@ -135,7 +159,10 @@ main {
     #f5d56d,
     #fff1a6
   );
-  color: #000;
+}
+
+.copy-btn {
+  background: linear-gradient(to bottom, white, gray, black, black);
 }
 
 .invitation-steps {
@@ -430,8 +457,8 @@ footer h2 {
     font-size: 24px;
   }
 
-  .share-link-div {
-    width: 40%;
+  .card-middle-div {
+    width: 70%;
   }
 
   .invitation-steps {
@@ -487,8 +514,8 @@ footer h2 {
     font-size: 19px;
   }
 
-  .share-link-div {
-    width: 40%;
+  .card-middle-div {
+    width: 70%;
   }
 
   .invitation-steps {
@@ -522,8 +549,8 @@ footer h2 {
     display: block;
   }
 
-  .share-link-div {
-    width: 50%;
+  .card-middle-div {
+    width: 90%;
   }
 
   .referral-section {
@@ -533,11 +560,6 @@ footer h2 {
   .friend-referrals {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
-  }
-
-  .action-btns button {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
   }
 
   .gold-coin-bg {
