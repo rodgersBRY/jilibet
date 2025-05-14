@@ -1,0 +1,548 @@
+:root {
+  --primary-color: #d9a441;
+  --secondary-color: #f5d56d;
+}
+
+body {
+  background-image: url("/assets/images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-top {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  letter-spacing: 2px;
+}
+
+.header-title > span {
+  color: red;
+}
+
+header .yellow-strip {
+  background-color: var(--primary-color);
+  padding: 3px 0;
+  color: #000;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+.mobile-header {
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+.mobile-header h1 {
+  color: black;
+}
+
+main {
+  padding: 2rem;
+}
+
+.referral-section {
+  margin: 1rem 0;
+  gap: 3rem;
+}
+
+.share-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.share-container h1 {
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.share-gradient-container {
+  background: conic-gradient(
+    #fff1a6,
+    #f5d56d,
+    #d9a441,
+    #a6722b,
+    #f5d56d,
+    #fff1a6
+  );
+  border-radius: 10px;
+  width: 100%;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.share-card {
+  background-image: url("/assets/images/share_card_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.share-card-title {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.share-link-div {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.share-link-div p {
+  font-size: 13px;
+  color: gray;
+}
+
+.action-btns button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: conic-gradient(
+    #fff1a6,
+    #f5d56d,
+    #d9a441,
+    #a6722b,
+    #f5d56d,
+    #fff1a6
+  );
+  color: #000;
+}
+
+.invitation-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.steps {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.steps > .line {
+  height: 3px;
+  border-radius: 5px;
+  width: 10%;
+  background-color: white;
+}
+
+.step-1,
+.step-2,
+.step-3 {
+  margin: 0 10px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gold-coin-bg {
+  border-radius: 50%;
+  background: conic-gradient(
+    #fff1a6,
+    #f5d56d,
+    #d9a441,
+    #a6722b,
+    #f5d56d,
+    #fff1a6
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 6px solid #f5d56d;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+.gold-coin-bg img {
+  width: 50%;
+  height: 50%;
+}
+
+.gold-coin-sm {
+  border-radius: 50%;
+  background: conic-gradient(
+    #fff1a6,
+    #f5d56d,
+    #d9a441,
+    #a6722b,
+    #f5d56d,
+    #fff1a6
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #f5d56d;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+.gold-coin-sm-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.gold-coin-bg-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #2e1e0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gold-coin-sm-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.friend-referrals {
+  display: grid;
+  justify-items: center;
+}
+
+.you-get,
+.friends-get {
+  background-image: url("/assets/images/bg1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.you-get h3,
+.friends-get h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.you-get ul,
+.friends-get ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.you-get ul li,
+.friends-get ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23f5d56d" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 15c-2.5 0-4.7-1.3-6-3.3.1-2 4-3.1 6-3.1s5.9 1.1 6 3.1c-1.3 2-3.5 3.3-6 3.3z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.share-icon, .copy-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.share-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-image: url("/assets/images/modal_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 15px;
+  border: 3px solid var(--secondary-color);
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.qr-container {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.qr-code {
+  width: 200px;
+  height: 200px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.confirm-btn {
+  background: conic-gradient(
+    #fff1a6,
+    #f5d56d,
+    #d9a441,
+    #a6722b,
+    #f5d56d,
+    #fff1a6
+  );
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.confirm-btn:hover {
+  transform: scale(1.05);
+}
+
+.copy-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.success-message {
+  text-align: center;
+}
+
+.success-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.success-message h2 {
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.success-message p {
+  color: #333;
+  font-size: 0.9rem;
+}
+
+footer {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+footer h4,
+footer h2 {
+  text-align: center;
+}
+
+/* desktop device */
+@media screen and (min-width: 1000px) {
+  .header-top,
+  .yellow-strip {
+    display: flex;
+  }
+
+  .mobile-header {
+    display: none;
+  }
+
+  .referral-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .share-container h1 {
+    font-size: 24px;
+  }
+
+  .invitation-steps {
+    gap: 2rem;
+  }
+
+  .friend-referrals {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .gold-coin-bg {
+    width: 90px;
+    height: 90px;
+  }
+
+  .gold-coin-sm {
+    width: 20px;
+    height: 20px;
+  }
+
+  .you-get,
+  .friends-get {
+    width: 80%;
+  }
+
+  footer {
+    width: 70%;
+  }
+}
+
+/* tablet device */
+@media screen and (max-width: 1000px) {
+  .header-top,
+  .yellow-strip {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  main > h1 {
+    display: none;
+  }
+
+  .friend-referrals {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .share-container h1 {
+    font-size: 19px;
+  }
+
+  .invitation-steps {
+    margin-top: 3rem;
+    gap: 4rem;
+  }
+
+  .gold-coin-bg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .gold-coin-sm {
+    width: 20px;
+    height: 20px;
+  }
+
+  .you-get,
+  .friends-get {
+    width: 100%;
+  }
+
+  footer {
+    width: 90%;
+  }
+}
+
+/* mobile device */
+@media screen and (max-width: 480px) {
+  .mobile-header {
+    display: block;
+  }
+
+  .referral-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .friend-referrals {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .action-btns button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .gold-coin-bg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .gold-coin-sm {
+    width: 15px;
+    height: 15px;
+  }
+
+  footer {
+    width: 95%;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
