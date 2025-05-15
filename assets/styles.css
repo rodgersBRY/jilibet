@@ -126,6 +126,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 5px;
 }
 
 .share-link-div {
@@ -239,16 +240,17 @@ main {
     #f5d56d,
     #fff1a6
   );
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 4px solid #f5d56d;
+  
+  border: 2px solid #f5d56d;
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
 }
 
 .gold-coin-sm-inner {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .gold-coin-bg-inner {
