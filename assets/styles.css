@@ -273,8 +273,6 @@ main {
   border-radius: 50%;
   overflow: hidden;
   padding: 5px;
-  width: 100px;
-  height: 100px;
   margin: 20px auto;
 }
 
@@ -315,8 +313,6 @@ main {
   border-radius: 50%;
   overflow: hidden;
   padding: 2.5px;
-  width: 100px;
-  height: 100px;
   margin: 20px auto;
 }
 
