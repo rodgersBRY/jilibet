@@ -114,6 +114,26 @@ header .yellow-strip {
   justify-content: center;
   align-items: center;
   font-size: 13px;
+  position: relative;
+  height: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.yellow-strip p {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  animation: scrollText 30s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-250%);
+  }
 }
 
 .mobile-header {
