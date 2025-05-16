@@ -5,19 +5,17 @@
     to bottom,
     #fff1a6,
     #f5d56d,
-    #d9a441,
-    #a6722b,
-    #a6722b,
-    #f5d56d
+    #765619,
+    #67471a,
+    #39270f
   );
   --reversed-gradient: linear-gradient(
     to top,
     #fff1a6,
     #f5d56d,
-    #d9a441,
-    #a6722b,
-    #a6722b,
-    #f5d56d
+    #765619,
+    #67471a,
+    #39270f
   );
   --div-border-radius: 10px;
   --border-radius-25: 25px;
@@ -152,6 +150,10 @@ main {
 .referral-section {
   margin: 1rem 0;
   gap: 3rem;
+}
+
+.referral-section h1 {
+  text-align: center;
 }
 
 .share-container {
@@ -296,29 +298,53 @@ main {
 }
 
 .steps {
-  width: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-}
-
-.steps > .line {
-  height: 3px;
-  border-radius: 5px;
-  width: 10%;
-  background-color: white;
+  width: 100%;
 }
 
 .step-1,
 .step-2,
 .step-3 {
-  margin: 0 10px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 20px;
+}
+
+.step-1 p,
+.step-2 p,
+.step-3 p {
+  text-align: center;
+}
+
+.gold-coin-border {
+  border-radius: var(--border-radius-rounded);
+  background: var(--primary-gradient);
+  display: grid;
+  place-items: center;
+  padding: 7px;
+}
+
+.gold-coin-mid {
+  border-radius: var(--border-radius-rounded);
+  width: 100%;
+  height: 100%;
+  background: var(--reversed-gradient);
+  display: grid;
+  place-items: center;
+  padding: 3px;
+}
+
+.gold-coin-content {
+  border-radius: var(--border-radius-rounded);
+  width: 100%;
+  height: 100%;
+  background: var(--primary-gradient);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .gold-coin-bg {
@@ -569,6 +595,11 @@ footer h2 {
     gap: 2rem;
   }
 
+  .gold-coin-border {
+    width: 85px;
+    height: 85px;
+  }
+
   .friend-referrals {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -630,6 +661,11 @@ footer h2 {
     gap: 4rem;
   }
 
+  .gold-coin-border {
+    width: 85px;
+    height: 85px;
+  }
+
   .gold-coin-bg {
     width: 70px;
     height: 70px;
@@ -671,6 +707,11 @@ footer h2 {
   .friend-referrals {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
+  }
+
+  .gold-coin-border {
+    width: 75px;
+    height: 75px;
   }
 
   .gold-coin-bg {
